@@ -6,3 +6,5 @@
 - Setting up Express [#](https://www.robinwieruch.de/node-js-express-tutorial)
 
 PORT: `5050`
+
+## Mongoose Reference [#](https://mongoosejs.com/docs/queries.html)
