@@ -5,6 +5,11 @@ function SearchBar({ props }) {
     <>
       <div className="searchbar">
         <input
+          style={{
+            padding: "1rem 3rem",
+            fontFamily: "sans-serif",
+            fontSize: "1.6rem",
+          }}
           type="text"
           value={props.query}
           onChange={(e) => props.setQuery(e.target.value)}
