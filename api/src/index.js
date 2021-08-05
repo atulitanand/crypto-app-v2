@@ -8,6 +8,12 @@ const app = express();
 
 app.use(cors());
 
+app.post('/login', (req, res) => {
+  res.json({ ...req.params })
+  console.log('post');
+});
+
+
 app.get("/api/stats/all", (req, res) => {
   res.status(400).json(coinsList);
 });
