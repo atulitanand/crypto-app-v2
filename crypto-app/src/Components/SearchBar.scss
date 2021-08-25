@@ -1,5 +1,4 @@
 .coin_search {
-  display: -ms-grid;
   display: grid;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -15,18 +14,6 @@
   outline: none;
   height: 100%;
   width: 100%;
-  color: #e2e2e2;
-}
-
-.coin_input::-webkit-input-placeholder {
-  color: #e2e2e2;
-}
-
-.coin_input:-ms-input-placeholder {
-  color: #e2e2e2;
-}
-
-.coin_input::-ms-input-placeholder {
   color: #e2e2e2;
 }
 
@@ -52,4 +39,3 @@
     }
   } */
 }
-/*# sourceMappingURL=SearchBar.css.map */
