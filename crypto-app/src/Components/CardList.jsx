@@ -1,10 +1,11 @@
 import React from "react";
-import Card from "./Coin/Card";
+import Card from "./Card";
+import CoinsNotFound from "./CoinsNotFound";
 
 function CardList({ props }) {
   return (
     <>
-      {props.map((coinDetail) => (
+      {props.length === 0 ? <CoinsNotFound /> : props.map((coinDetail) => (
         <Card props={coinDetail} />
       ))}
     </>

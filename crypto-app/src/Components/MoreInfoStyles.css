@@ -1,0 +1,89 @@
+.more-info-page-header {
+  padding: 2rem 1rem 3rem 0.9rem;
+  margin-left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more-info-page-header img {
+  max-width: 3rem;
+}
+
+.more-info-page-header h2 {
+  margin-left: 2rem;
+  padding-top: 0.9rem;
+}
+
+.more-info-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.stats {
+  max-width: 49vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40vw;
+          flex: 1 1 40vw;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  min-width: 40%;
+  margin-left: 5%;
+}
+
+.stats ul {
+  list-style: none;
+}
+
+.stats .property,
+.stats .value {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.stats .property {
+  font-weight: 900;
+  margin-right: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.stats .value {
+  font-weight: 300;
+}
+
+.graph-wrapper {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  max-width: 49vw;
+  margin-left: 4%;
+}
+
+.graph-wrapper img {
+  max-width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .more-info-page-content .stats {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-width: 95%;
+  }
+  .more-info-page-content .graph-wrapper {
+    min-width: 95%;
+    margin: 3rem auto 4rem auto;
+  }
+  .more-info-page-content .graph-wrapper img {
+    width: 98%;
+    min-height: 50vh;
+  }
+}
+/*# sourceMappingURL=MoreInfoStyles.css.map */

@@ -1,38 +1,30 @@
-// import API from "./Components/FunkyExperimentLab/API";
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from '../Components/Login/Login';
-import Dashboard from '../Components/Dashboard/Dashboard';
-import Preferences from '../Components/Preferences/Preferences';
-import useToken from './useToken';
+import MoreInfoPage from '../Components/MoreInfoPage';
+import SearchWindow from '../Components/SearchWindow';
 import './App.css'
 
 function App() {
 
-  const { token, setToken } = useToken();
-
-  if(!token) {
-    return <Login setToken={setToken} />
-  }
-
   return (
     <>
       <div className="coin_app">
-        {/* <h1>Application</h1> */}
         <BrowserRouter>
           <Switch>
-            <Route path="/dashboard">
-              <Dashboard />
-            </Route>
-            <Route path="/preferences">
-              <Preferences />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
+            <Route path="/" children={<SearchWindow />} exact />
+            <Route path="/:id" children={<MoreInfoPage />} />
           </Switch>
         </BrowserRouter>
       </div>
+      <footer style={{
+        padding: '2rem',
+        marginTop: '1rem',
+        fontSize: '1.3rem',
+        fontWeight: 'bolder',
+        textAlign: 'center',
+      }}>
+        Made with ❤️ and {'<React />'}.
+      </footer>
     </>
   );
 }

@@ -1,0 +1,41 @@
+.coin_search {
+  display: grid;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.coin_input {
+  max-width: 600px;
+  margin: auto;
+  background: #222531;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: #e2e2e2;
+}
+
+.coin_input::placeholder {
+  color: #e2e2e2;
+}
+
+@media (max-width: 600px) {
+  div.coin_data {
+    display: none;
+  }
+  .coin_search {
+    margin: 2rem 1rem 3rem 1rem;
+  }
+  /* .more-info-page-content {
+    .stats {
+      order: 2;
+      min-width: 95%;
+    }
+    .graph-wrapper {
+      min-width: 95%;
+      margin: 3rem auto 4rem auto;
+    }
+  } */
+}

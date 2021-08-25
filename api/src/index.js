@@ -13,9 +13,16 @@ app.post('/login', (req, res) => {
   console.log('post');
 });
 
+app.get('/', (req, res) => {
+  res.status(200).send(`
+  <a href="/api/stats/all">/api/stats/all</a>
+  <a href="/api/stats/id">/api/stats/id</a>
+  <a href="/api/stats/coin/id">/api/stats/coin/id</a>
+  `)
+})
 
 app.get("/api/stats/all", (req, res) => {
-  res.status(400).json(coinsList);
+  res.status(200).json(coinsList);
 });
 
 app.get("/api/stats/:id", (req, res) => {
