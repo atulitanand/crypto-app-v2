@@ -1,6 +1,7 @@
 # crypto-app-v2
 
-** Summary of application **
+**Summary of application**
+
 This project represents a comprehensive visualization tool designed to track and analyze the trajectory and changes of various cryptocurrency applications. Leveraging React.js and a self-made API populated with static data, this repository offers a sophisticated platform for monitoring the dynamic landscape of cryptocurrency markets.
 
 Utilizing React.js, a leading JavaScript library for building user interfaces, this project delivers a seamless and intuitive user experience. The responsive and interactive nature of React.js enables users to explore and interpret cryptocurrency data with ease.
